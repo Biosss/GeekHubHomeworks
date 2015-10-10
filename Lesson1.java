@@ -3,10 +3,10 @@ import java.util.Scanner;
 class Lesson1 {
     public static void main(String[] args) {
 	
-        System.out.println("Viberete dejstvie:");
-		System.out.println("1) Vichislit n-faktorial");
-		System.out.println("2) Vivesti chislo Fibonachi");
-		System.out.println("3) Vivesti zadanyjy tsifry v slovesnoi forme");
+        System.out.println("Please, select action from the list below:");
+		System.out.println("1) Calculate the n-factorial");
+		System.out.println("2) Show Fibonacci numbers");
+		System.out.println("3) Show number like word");
 		System.out.println("4) Exit");
 
 		Scanner reader = new Scanner(System.in);
@@ -14,7 +14,7 @@ class Lesson1 {
 
         switch (choose) {
             case 1:  
-					System.out.println("Vvedite chislo 'n', faktorial kotorogo neobhodimo naiti:");
+					System.out.println("Enter 'n', to calculate n-factorial:");
 		            int n = reader.nextInt();  //Число n, факториал которого мы находим.
 					int nFaktorial = 1; 	   
 					for (int i = 1; i <= n; i++)
@@ -22,7 +22,7 @@ class Lesson1 {
 					System.out.println(n + "!= " + nFaktorial);	
                     break;
 			case 2:  
-					System.out.println("Chisla Fibonachi");
+					System.out.println("Fibonacci numbers");
 					int fibonachi[];  			//массив чисел Фибоначи
 					fibonachi = new int[20];
 					for(int i = 0; i < 20 ;i++){
@@ -33,7 +33,7 @@ class Lesson1 {
 					}
                      break;
 			case 3:  
-					System.out.println("Vvedite lyboe chislo:");
+					System.out.println("Enter any number:");
 					int number = reader.nextInt();
 					switch (number) {
 					case 0:System.out.println("Zero");
@@ -60,7 +60,7 @@ class Lesson1 {
 					break;
 			case 4:  
                      break;
-			default: System.out.println("Vibrano nevernoe deistvie");
+			default: System.out.println("It was chosen the wrong action!!!");
                      break;
 					 }
 					 
